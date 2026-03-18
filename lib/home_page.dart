@@ -1,5 +1,5 @@
+import 'package:flutter_magic_8_ball_app/utils/ball_logic.dart';
 import 'package:flutter/material.dart';
-import 'dart:math';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -11,8 +11,8 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   String ballImage = "assets/cover.png";
 
-  void shuffleBall () {
-    int randomNumber = Random().nextInt(5) + 1;
+  void shuffleBall() {
+    int randomNumber = BallLogic.getRandomBallIndex();
     setState(() {
       ballImage = "assets/ball$randomNumber.png";
     });
@@ -30,10 +30,7 @@ class _HomePageState extends State<HomePage> {
             children: [
               Text(
                 'Ask Me Anything...',
-                style: TextStyle(
-                  fontSize: 35,
-                  color: Colors.white
-                ),
+                style: TextStyle(fontSize: 35, color: Colors.white),
               ),
             ],
           ),
@@ -52,17 +49,12 @@ class _HomePageState extends State<HomePage> {
             height: 50,
             child: ElevatedButton(
               style: ElevatedButton.styleFrom(
-                shape: const RoundedRectangleBorder(
-                  borderRadius: BorderRadius.zero
-                )
-              ),
-              onPressed: shuffleBall, 
+                  shape: const RoundedRectangleBorder(
+                      borderRadius: BorderRadius.zero)),
+              onPressed: shuffleBall,
               child: const Text(
                 'Ask',
-                style: TextStyle(
-                  color: Colors.cyan,
-                  fontSize: 28
-                ),
+                style: TextStyle(color: Colors.cyan, fontSize: 28),
               ),
             ),
           )

@@ -1,4 +1,4 @@
-import 'package:design_a_ball_shuffle_app/home_page.dart';
+import 'package:flutter_magic_8_ball_app/home_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
