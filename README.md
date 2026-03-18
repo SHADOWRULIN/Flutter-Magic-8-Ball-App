@@ -1,7 +1,10 @@
 # 🔮 Flutter Magic 8-Ball (Shuffle App)
 
-![Project Preview](images/screenshot.png)
-![Project Preview Run](images/screenshot1.png)
+<p align="center">
+  <img src="images/screenshot.png" width="250">
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="images/screenshot1.png" width="250">
+</p>
 
 A minimalist and interactive decision-making application built with **Flutter**. This project focuses on managing application state and implementing randomization logic to provide users with an engaging "Magic 8-Ball" experience.
 
@@ -22,14 +25,17 @@ A minimalist and interactive decision-making application built with **Flutter**.
 
 ## 🚀 How to Run
 1. **Clone the repo:**
+   
    ```bash
    git clone https://github.com/SHADOWRULIN/Flutter-Magic-8-Ball-App.git
 
 2. **Install dependencies:**
+   
    ```bash
     flutter pub get
 
 3. **Run the app:**
+   
    ```bash
     flutter run
 
